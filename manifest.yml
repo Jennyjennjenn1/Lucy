@@ -1,0 +1,14 @@
+applications:
+- name: watson-assistant-multi-bot-agent
+  command: npm start
+  path: .
+  memory: 256M
+  instances: 1
+  random-route: true
+  env:
+    WORKSPACE_ID_AGENT: <Workspace ID of agent bot>
+    WORKSPACE_ID_TRAVEL: <Workspace ID of travel bot>
+    WORKSPACE_ID_WEATHER: <Workspace ID of weather bot>
+    ASSISTANT_IAM_API_KEY: <API Key for service instance>
+    ASSISTANT_IAM_URL: <URL of service instance>
+    VERSION: <version of waston assistant sdk apis>
